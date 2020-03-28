@@ -9,13 +9,13 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         Animal dog = new Animal("dog");
-        dog.name = "Akita";
+        dog.name = "Reksio";
 
-        Phone iphone = new Phone("Apple", "6s", 4.7);
+        Phone iphone = new Phone("Apple", "Xr", 6.1);
 
         Human me = new Human();
-        me.firstName = "Kacper";
-        me.lastName = "Warda";
+        me.firstName = "Wojciech";
+        me.lastName = "Chamski";
         me.pet = dog;
         me.mobile = iphone;
 
@@ -27,9 +27,10 @@ public class Main {
         me.pet.takeForAWalk();
         me.pet.takeForAWalk();
 
-        Car dirtyOne = new Car("fiat", "bravo", 2014, 1.6);
-        dirtyOne.plates = "GDA2314";
+        Car dirtyOne = new Car("ford", "fiesta", 1996, 1.1);
+        dirtyOne.plates = "GDA6666";
         me.car = dirtyOne;
+
         System.out.println(me.car.producer + " " + me.car.model + " " + me.car.plates);
 
         System.out.println(me instanceof Animal);
@@ -44,6 +45,13 @@ public class Main {
 
         iphone.sell();
         me.pet.sell();
-        me.sell();
+
+        Human wife = new Human();
+        wife.firstName = "Natalia";
+        wife.lastName = "Chamska";
+        wife.car = dirtyOne;
+
+        System.out.println(me.car);
+        System.out.println(wife.car);
     }
 }

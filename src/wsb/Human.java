@@ -29,5 +29,8 @@ public class Human extends Animal{
         throw new Exception("don't do this freak");
     }
 
+    public String toString(){
+        return firstName + " " + lastName;
+    }
 
 }
