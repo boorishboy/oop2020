@@ -1,14 +1,16 @@
 package wsb;
 
+import wsb.creatures.Animal;
+import wsb.creatures.FarmAnimal;
+import wsb.creatures.Pet;
 import wsb.devices.Car;
-import wsb.devices.Device;
 import wsb.devices.Phone;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        Animal dog = new Animal("dog");
+        Animal dog = new Pet("dog");
         dog.name = "Reksio";
 
         Phone iphone = new Phone("Apple", "Xr", 6.1);
@@ -60,6 +62,8 @@ public class Main {
         brother.firstName = "Seba";
         brother.cash = 300.0;
         me.car.sell(brother, me, 100.0);
+
+        FarmAnimal chicken = new FarmAnimal("chiken");
 
     }
 }

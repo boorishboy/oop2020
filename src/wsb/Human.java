@@ -1,16 +1,16 @@
 package wsb;
 
+import wsb.creatures.Animal;
 import wsb.devices.Car;
 import wsb.devices.Phone;
 
-public class Human extends Animal{
+public class Human extends Animal {
     public String firstName;
     public String lastName;
     public Animal pet;
     public Phone mobile;
     public Car car;
     public Double cash;
-
     protected String phoneNumber;
     private Double salary;
 
