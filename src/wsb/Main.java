@@ -18,6 +18,7 @@ public class Main {
         me.lastName = "Chamski";
         me.pet = dog;
         me.mobile = iphone;
+        me.cash = 1000.0;
 
         me.pet.feed();
         me.pet.takeForAWalk();
@@ -53,5 +54,12 @@ public class Main {
 
         System.out.println(me.car);
         System.out.println(wife.car);
+        System.out.println(me);
+
+        Human brother = new Human();
+        brother.firstName = "Seba";
+        brother.cash = 300.0;
+        me.car.sell(brother, me, 100.0);
+
     }
 }

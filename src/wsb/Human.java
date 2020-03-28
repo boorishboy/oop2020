@@ -9,6 +9,7 @@ public class Human extends Animal{
     public Animal pet;
     public Phone mobile;
     public Car car;
+    public Double cash;
 
     protected String phoneNumber;
     private Double salary;

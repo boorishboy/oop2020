@@ -62,7 +62,6 @@ public class Animal implements Soldable, Edible {
     }
 
 
-    @Override
     public void sell() throws Exception {
         System.out.println("now gimme the money");
     }
@@ -70,5 +69,10 @@ public class Animal implements Soldable, Edible {
     @Override
     public void eat() throws Exception {
         System.out.println("that was yuammy");
+    }
+
+    @Override
+    public void sell(Human buyer, Human seller, Double price) throws Exception {
+
     }
 }

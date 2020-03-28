@@ -1,5 +1,7 @@
 package wsb.devices;
 
+import wsb.Human;
+
 public class Phone extends Device {
     final Double screenSize;
 
@@ -11,5 +13,10 @@ public class Phone extends Device {
     @Override
     public void turnOn() {
         System.out.println("phone is turned on");
+    }
+
+    @Override
+    public void sell(Human buyer, Human seller, Double price) throws Exception {
+
     }
 }
